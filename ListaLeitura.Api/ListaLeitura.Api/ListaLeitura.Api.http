@@ -1,0 +1,6 @@
+@ListaLeitura.Api_HostAddress = http://localhost:5101
+
+GET {{ListaLeitura.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

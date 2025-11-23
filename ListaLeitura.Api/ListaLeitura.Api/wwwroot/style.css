@@ -1,0 +1,151 @@
+﻿/* Reset básico */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+h1 {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Seções */
+h2 {
+    color: #4a90e2;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Formulário */
+form {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+    form label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    form input, form select {
+        width: 95%;
+        padding: 8px;
+        margin-top: 4px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    form button {
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        form button:hover {
+            background-color: #357ab8;
+        }
+
+/* Lista de livros */
+#listaLivros {
+    list-style: none;
+    padding: 0;
+    width: 600px;
+    margin: 20px auto;
+}
+
+    #listaLivros li {
+        background: white;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #listaLivros button {
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        padding: 6px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        #listaLivros button:hover {
+            background-color: #c0392b;
+        }
+
+#livrosContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.coluna {
+    width: 30%;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+    .coluna h3 {
+        text-align: center;
+        color: #4a90e2;
+    }
+
+    .coluna ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .coluna li {
+        background: white;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .coluna button {
+        margin: 5px 5px 0 0;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+.coluna button:first-of-type {
+     background-color: #f39c12; 
+     color: white;
+}
+
+.coluna button:last-of-type {
+     background-color: #e74c3c; 
+     color: white;
+}
+
+#mensagemErro {
+    margin-top: 10px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}

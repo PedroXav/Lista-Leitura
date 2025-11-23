@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Leitura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📚 Lista de Livros</h1>
+
+    <!-- Formulário de cadastro -->
+    <h2>Cadastrar Livro</h2>
+    <form id="formCadastro">
+        <label>
+            Título:
+            <input type="text" id="titulo">
+        </label><br>
+        <label>
+            Autor:
+            <input type="text" id="autor">
+        </label><br>
+        <label>
+            Status:
+            <select id="status">
+                <option value="0">Não lido</option>
+                <option value="1">Lendo</option>
+                <option value="2">Lido</option>
+            </select>
+        </label><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <div id="mensagemErro"></div>
+
+    <hr>
+
+    <!-- Lista de livros em colunas -->
+    <h2>Livros Cadastrados</h2>
+    <div id="livrosContainer">
+        <div class="coluna">
+            <h3>Não lidos</h3>
+            <ul id="listaNaoLidos"></ul>
+        </div>
+        <div class="coluna">
+            <h3>Lendo</h3>
+            <ul id="listaLendo"></ul>
+        </div>
+        <div class="coluna">
+            <h3>Lidos</h3>
+            <ul id="listaLidos"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
